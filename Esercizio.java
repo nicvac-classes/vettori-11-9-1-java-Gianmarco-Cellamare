@@ -2,24 +2,44 @@
 
 //Import di Classi Java necessarie al funzionamento del programma
 import java.util.Scanner;
+import java.util.FileReader;
+import java.util.FileWrite;
 
-// Classe principale, con metodo main
+public  int inverti (String riga) {
+    N=Len(riga);
+    int N,i,
+    String agir;
+    agir="";
+    while (N-1 >= 0) {
+        agit=charAt(riga);
+        i--;
+    }
+    return agir;
+}
+
+
 class Esercizio {
-    // Il programma parte con una chiamata a main().
     public static void main(String args[])
     {
-        //Variabili del programma
-        String nome;
-
-        //Creo l'oggetto in per l'input da tastiera
         Scanner in = new Scanner( System.in );
 
-        //Leggo l'input da tastiera
-        System.out.print("Inserisci il tuo nome: ");
-        nome = in.nextLine();
+        String InputFileName, OutFileName, riga;
 
-        //Output del nome acquisito da tastiera
-        System.out.println("Ciao "+nome+"!");
+        System.out.print("Nome del file di input");
+        InputFileName = in.nextLine();
+
+    
+        System.out.print("Nome del file di output");
+        OutFileName = in.nextLine();
+
+        do{
+            lettura riga;
+            riga=inverti(riga);
+            scrivi riga;
+
+
+        }while(notEOP());
+
     }
 }
 
